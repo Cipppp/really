@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Josefin+Sans&display=swap');
+/* Navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #fdebd0;
+    height: 6rem;
+}
+
+/* Navbar links */
+.navbar a {
+    font-family: 'Josefin Sans', sans-serif;
+    float: right;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 2rem;
+    text-decoration: none;
+    /* Pentru a alinia vertical elementele */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+a.logo {
+    font-family: 'Fascinate Inline', cursive;
+    color: #f1948a;
+    font-size: 2.5rem;
+    float: left;
+}
+
+/* Pentru a face navbarul "lipicos" de partea de sus */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/* .sticky + .content {
+  padding-top: 60px; */
+/* }  */
