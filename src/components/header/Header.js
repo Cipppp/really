@@ -1,10 +1,10 @@
 import React from 'react';
 import './Header.css';
 
-function Navbar() {
+function Header() {
     return (
-        <div>
-            <div className="navbar">
+        <>
+            <div className="navbar sticky">
                 <a href="#logo" className="logo">
                     Really?
                 </a>
@@ -12,8 +12,8 @@ function Navbar() {
                 <a href="#technology">Technology</a>
                 <a href="#physics">Physics</a>
             </div>
-        </div>
+        </>
     );
 }
 
-export default Navbar;
+export default Header;

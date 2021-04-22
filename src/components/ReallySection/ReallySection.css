@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Josefin+Sans&display=swap');
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.greenSection {
+    background-color: #a2d9ce;
+}
+
+.yellowSection {
+    background-color: #fdebd0;
+}
+
+.greenSection,
+.yellowSection {
+    height: 100vh;
+}
+
+.centerText {
+    grid-area: text;
+    font-size: 3.5rem;
+    color: #fff;
+}
+.specialContainer {
+    display: grid;
+    grid-template-columns: 10% auto 5%;
+    grid-template-rows: 45% auto 20%;
+    grid-template-areas:
+        '. . .'
+        '. text .'
+        '. . .';
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.textToLeft,
+.textToRight {
+    font-size: 1.5rem;
+}
