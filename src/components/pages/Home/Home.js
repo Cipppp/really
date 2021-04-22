@@ -1,5 +1,11 @@
 import React from 'react';
-import { firstSection, secondSection, thirdSection } from './Data';
+import {
+    firstSection,
+    secondSection,
+    thirdSection,
+    fourthSection,
+    fifthSection,
+} from './Data';
 import { ReallySection } from '../../../components';
 
 function Home() {
@@ -8,6 +14,8 @@ function Home() {
             <ReallySection {...firstSection} />
             <ReallySection {...secondSection} />
             <ReallySection {...thirdSection} />
+            <ReallySection {...fourthSection} />
+            <ReallySection {...fifthSection} />
         </div>
     );
 }

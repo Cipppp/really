@@ -1,8 +1,21 @@
 import React from 'react';
 import './ReallySection.css';
 import PieChart from '../Pie/PieChart';
+import BarChart from '../Pie/BarChart';
 
-const ReallySection = ({ showGreen, text, firstSection, textRight }) => {
+const ReallySection = ({
+    showGreen,
+    text,
+    firstSection,
+    textRight,
+    sectionLabel,
+    colors,
+    dataset,
+    chartType,
+    displayLegend,
+    displayTitle,
+    title,
+}) => {
     return (
         <>
             <div
@@ -24,7 +37,24 @@ const ReallySection = ({ showGreen, text, firstSection, textRight }) => {
                 </p>
 
                 <div className={`graph`}>
-                    {firstSection === false && <PieChart></PieChart>}
+                    {chartType === 'Pie' && (
+                        <PieChart
+                            sectionLabel={sectionLabel}
+                            colors={colors}
+                            dataset={dataset}
+                            displayLegend={displayLegend}
+                            displayTitle={displayTitle}
+                            title={title}
+                        ></PieChart>
+                    )}
+
+                    {chartType === 'Bar' && (
+                        <BarChart
+                            sectionLabel={sectionLabel}
+                            colors={colors}
+                            dataset={dataset}
+                        ></BarChart>
+                    )}
                 </div>
             </div>
         </>
