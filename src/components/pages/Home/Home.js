@@ -8,7 +8,6 @@ import {
     sectionSixHome,
     sectionSevenHome,
 } from '../Data';
-import './Home.css';
 import { ReallySection } from '../../../components';
 
 function Home() {

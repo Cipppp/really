@@ -52,10 +52,10 @@ body {
     padding: 0 4vw;
 }
 
-.specialContainer,
+/* .specialContainer,
 .container {
     scroll-snap-align: start;
-}
+} */
 
 .textToLeft,
 .textToRight {

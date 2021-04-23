@@ -9,8 +9,8 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
     return (
-        <div className="items">
-            <Router>
+        <>
+            <Router className="items">
                 <ScrollToTop />
                 <Header />
                 <Switch>
@@ -20,7 +20,7 @@ function App() {
                     <Route path="/cleanenergy" exact component={CleanEnergy} />
                 </Switch>
             </Router>
-        </div>
+        </>
     );
 }
 

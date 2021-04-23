@@ -124,17 +124,9 @@ table {
     border-spacing: 0;
 }
 
-.items {
+/* .items {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
     scroll-padding-top: 10vh;
-}
-
-html {
-    overflow: scroll;
-}
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-}
+} */
