@@ -1,26 +1,19 @@
 import React from 'react';
-import { Pie, defaults } from 'react-chartjs-2';
+import { HorizontalBar, defaults } from 'react-chartjs-2';
 
 defaults.global.defaultFontFamily = 'Josefin Sans';
 
-function PieChart({
-    sectionLabel,
-    colors,
-    dataset,
-    displayLegend,
-    displayTitle,
-    title,
-}) {
+function PieChart({ sectionLabel, colors, dataset }) {
     return (
         <div>
-            <Pie
+            <HorizontalBar
                 data={{
                     labels: sectionLabel,
                     datasets: [
                         {
                             data: dataset,
                             backgroundColor: colors,
-                            borderWidth: 0,
+                            borderWidth: 4,
                         },
                     ],
                 }}
@@ -28,19 +21,23 @@ function PieChart({
                 width={550}
                 options={{
                     scales: {
-                        display: false,
+                        yAxes: [
+                            {
+                                ticks: {
+                                    beginAtZero: true,
+                                },
+                            },
+                        ],
                     },
 
                     legend: {
-                        display: displayLegend,
-                        labels: {
-                            fontSize: 14,
-                        },
+                        display: false,
                     },
+
                     title: {
-                        display: displayTitle,
-                        text: title,
-                        fontSize: 15,
+                        display: true,
+                        fontSize: 18,
+                        // text: 'Internet users',
                     },
                 }}
             />

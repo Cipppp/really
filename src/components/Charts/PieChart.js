@@ -1,20 +1,19 @@
 import React from 'react';
-import { Bar, defaults } from 'react-chartjs-2';
+import { Pie, defaults } from 'react-chartjs-2';
 
 defaults.global.defaultFontFamily = 'Josefin Sans';
 
-function BarChart({ sectionLabel, colors, dataset }) {
+function PieChart({ sectionLabel, colors, dataset }) {
     return (
         <div>
-            <Bar
+            <Pie
                 data={{
                     labels: sectionLabel,
                     datasets: [
                         {
-                            label: 'Percent (%)',
                             data: dataset,
                             backgroundColor: colors,
-                            borderWidth: 4,
+                            borderWidth: 0,
                         },
                     ],
                 }}
@@ -26,8 +25,10 @@ function BarChart({ sectionLabel, colors, dataset }) {
                     },
 
                     legend: {
+                        position: 'top',
+                        // padding: 10,
                         labels: {
-                            fontSize: 15,
+                            fontSize: 13,
                         },
                     },
                 }}
@@ -36,4 +37,4 @@ function BarChart({ sectionLabel, colors, dataset }) {
     );
 }
 
-export default BarChart;
+export default PieChart;

@@ -1,21 +1,25 @@
 import React from 'react';
 import {
-    firstSection,
-    secondSection,
-    thirdSection,
-    fourthSection,
-    fifthSection,
-} from './Data';
+    sectionOneHome,
+    sectionTwoHome,
+    sectionThreeHome,
+    sectionFourHome,
+    sectionFiveHome,
+    sectionSixHome,
+    sectionSevenHome,
+} from '../Data';
 import { ReallySection } from '../../../components';
 
 function Home() {
     return (
         <div>
-            <ReallySection {...firstSection} />
-            <ReallySection {...secondSection} />
-            <ReallySection {...thirdSection} />
-            <ReallySection {...fourthSection} />
-            <ReallySection {...fifthSection} />
+            <ReallySection {...sectionOneHome} />
+            <ReallySection {...sectionTwoHome} />
+            <ReallySection {...sectionThreeHome} />
+            <ReallySection {...sectionFourHome} />
+            <ReallySection {...sectionFiveHome} />
+            <ReallySection {...sectionSixHome} />
+            <ReallySection {...sectionSevenHome} />
         </div>
     );
 }

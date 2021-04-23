@@ -1,7 +1,8 @@
 import React from 'react';
 import './ReallySection.css';
-import PieChart from '../Pie/PieChart';
-import BarChart from '../Pie/BarChart';
+import PieChart from '../Charts/PieChart';
+import BarChart from '../Charts/BarChart';
+import HorizontalBarChart from '../Charts/HorizontalBarChart';
 
 const ReallySection = ({
     showGreen,
@@ -12,9 +13,6 @@ const ReallySection = ({
     colors,
     dataset,
     chartType,
-    displayLegend,
-    displayTitle,
-    title,
 }) => {
     return (
         <>
@@ -42,9 +40,6 @@ const ReallySection = ({
                             sectionLabel={sectionLabel}
                             colors={colors}
                             dataset={dataset}
-                            displayLegend={displayLegend}
-                            displayTitle={displayTitle}
-                            title={title}
                         ></PieChart>
                     )}
 
@@ -54,6 +49,14 @@ const ReallySection = ({
                             colors={colors}
                             dataset={dataset}
                         ></BarChart>
+                    )}
+
+                    {chartType === 'HorizontalBar' && (
+                        <HorizontalBarChart
+                            sectionLabel={sectionLabel}
+                            colors={colors}
+                            dataset={dataset}
+                        ></HorizontalBarChart>
                     )}
                 </div>
             </div>

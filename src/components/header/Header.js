@@ -1,17 +1,19 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <>
-            <div className="navbar sticky">
-                <a href="#logo" className="logo">
+            <nav className="navbar sticky">
+                <Link to="/" className="logo">
                     Really?
-                </a>
-                <a href="#science">Science</a>
-                <a href="#technology">Technology</a>
-                <a href="#physics">Physics</a>
-            </div>
+                </Link>
+                <Link to="/cleanenergy">Clean Energy</Link>
+                <Link to="/people">People</Link>
+                <Link to="/economy">Economy</Link>
+                <Link to="/">Home</Link>
+            </nav>
         </>
     );
 }
