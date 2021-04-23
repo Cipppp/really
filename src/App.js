@@ -5,11 +5,13 @@ import Home from './components/pages/Home/Home';
 import Economy from './components/pages/Economy/Economy';
 import People from './components/pages/People/People';
 import CleanEnergy from './components/pages/CleanEnergy/CleanEnergy';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
     return (
-        <>
+        <div className="items">
             <Router>
+                <ScrollToTop />
                 <Header />
                 <Switch>
                     <Route path="/" exact component={Home} />
@@ -18,7 +20,7 @@ function App() {
                     <Route path="/cleanenergy" exact component={CleanEnergy} />
                 </Switch>
             </Router>
-        </>
+        </div>
     );
 }
 

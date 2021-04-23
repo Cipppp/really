@@ -33,32 +33,33 @@ const ReallySection = ({
                 >
                     {text}
                 </p>
+                {chartType && (
+                    <div className="graph">
+                        {chartType === 'Pie' && (
+                            <PieChart
+                                sectionLabel={sectionLabel}
+                                colors={colors}
+                                dataset={dataset}
+                            ></PieChart>
+                        )}
 
-                <div className={`graph`}>
-                    {chartType === 'Pie' && (
-                        <PieChart
-                            sectionLabel={sectionLabel}
-                            colors={colors}
-                            dataset={dataset}
-                        ></PieChart>
-                    )}
+                        {chartType === 'Bar' && (
+                            <BarChart
+                                sectionLabel={sectionLabel}
+                                colors={colors}
+                                dataset={dataset}
+                            ></BarChart>
+                        )}
 
-                    {chartType === 'Bar' && (
-                        <BarChart
-                            sectionLabel={sectionLabel}
-                            colors={colors}
-                            dataset={dataset}
-                        ></BarChart>
-                    )}
-
-                    {chartType === 'HorizontalBar' && (
-                        <HorizontalBarChart
-                            sectionLabel={sectionLabel}
-                            colors={colors}
-                            dataset={dataset}
-                        ></HorizontalBarChart>
-                    )}
-                </div>
+                        {chartType === 'HorizontalBar' && (
+                            <HorizontalBarChart
+                                sectionLabel={sectionLabel}
+                                colors={colors}
+                                dataset={dataset}
+                            ></HorizontalBarChart>
+                        )}
+                    </div>
+                )}
             </div>
         </>
     );

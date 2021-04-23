@@ -20,15 +20,20 @@ function PieChart({ sectionLabel, colors, dataset }) {
                 height={550}
                 width={550}
                 options={{
+                    animation: {
+                        duration: 1000,
+                    },
+                    responsive: true,
+                    maintainAspectRatio: false,
                     scales: {
                         display: false,
                     },
 
                     legend: {
                         position: 'top',
-                        // padding: 10,
                         labels: {
                             fontSize: 13,
+                            // fontColor: '#000',
                         },
                     },
                 }}

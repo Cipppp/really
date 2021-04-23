@@ -20,6 +20,8 @@ function PieChart({ sectionLabel, colors, dataset }) {
                 height={550}
                 width={550}
                 options={{
+                    responsive: true,
+                    maintainAspectRatio: false,
                     scales: {
                         yAxes: [
                             {
@@ -36,8 +38,7 @@ function PieChart({ sectionLabel, colors, dataset }) {
 
                     title: {
                         display: true,
-                        fontSize: 18,
-                        // text: 'Internet users',
+                        fontSize: 13,
                     },
                 }}
             />

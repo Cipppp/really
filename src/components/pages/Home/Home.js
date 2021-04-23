@@ -8,11 +8,12 @@ import {
     sectionSixHome,
     sectionSevenHome,
 } from '../Data';
+import './Home.css';
 import { ReallySection } from '../../../components';
 
 function Home() {
     return (
-        <div>
+        <>
             <ReallySection {...sectionOneHome} />
             <ReallySection {...sectionTwoHome} />
             <ReallySection {...sectionThreeHome} />
@@ -20,7 +21,7 @@ function Home() {
             <ReallySection {...sectionFiveHome} />
             <ReallySection {...sectionSixHome} />
             <ReallySection {...sectionSevenHome} />
-        </div>
+        </>
     );
 }
 

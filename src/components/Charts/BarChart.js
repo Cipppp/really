@@ -20,20 +20,22 @@ function BarChart({ sectionLabel, colors, dataset }) {
             height={550}
             width={550}
             options={{
+                responsive: true,
+                maintainAspectRatio: false,
                 scales: {
                     yAxes: [
                         {
                             ticks: {
                                 beginAtZero: true,
-                                max: 100,
                             },
                         },
                     ],
                 },
 
                 legend: {
+                    borderWidth: 0,
                     labels: {
-                        fontSize: 15,
+                        fontSize: 13,
                     },
                 },
             }}
