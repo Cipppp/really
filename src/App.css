@@ -130,3 +130,13 @@ table {
     height: 100vh;
     scroll-padding-top: 10vh;
 } */
+
+/* Pentru stilizarea scrollbar-ului  */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #909090;
+}
