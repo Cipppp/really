@@ -1,7 +1,7 @@
 # Really
 
-### `Download this https://git-scm.com/downloads`
-### `Download this https://nodejs.org/en/`
+1. Download this https://git-scm.com/downloads
+2. Download this https://nodejs.org/en/
 ### `npm install react-scripts --save`
 ### `npm start`
 
