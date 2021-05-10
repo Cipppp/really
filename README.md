@@ -1,9 +1,8 @@
-# Getting Started with Create React App
+# Really
 
-### Download this https://git-scm.com/downloads
-### Download this https://nodejs.org/en/
-### npm install react-scripts --save
-
+### `Download this https://git-scm.com/downloads`
+### `Download this https://nodejs.org/en/`
+### `npm install react-scripts --save`
 ### `npm start`
 
 Runs the app in the development mode.\
