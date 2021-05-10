@@ -1,10 +1,20 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Download this https://git-scm.com/downloads
+2. Download this https://nodejs.org/en/
+3. npm install react-scripts --save
 
-## Available Scripts
 
-In the project directory, you can run:
+http://github.com - automatic!
+[GitHub](http://github.com)
+
+As Kanye West said:
+
+> We're living the future so
+> the present is our past.
+
+I think you should use an
+`<addr>` element here instead.
 
 ### `npm start`
 
